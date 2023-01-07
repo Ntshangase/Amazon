@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import {SearchIcon} from '@heroicons/react/outline';
+import {SearchIcon, ShoppingCartIcon} from '@heroicons/react/outline';
 
 export default function Header() {
   return (
@@ -16,9 +16,25 @@ export default function Header() {
                 className="cursor-pointer"
                 />
             </div>
+            {/*Search bar */}
             <div className='hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer bg-yellow-400 hoover-bg-yellow-500'>
                 <input className='p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4' type="text" />
                 <SearchIcon className='h-12 p-4' />
+            </div>
+            {/*Right side */}
+            <div className=' text-white flex items-center text-xs space-x-6 whitespace-nowrap'>
+                <div>
+                    <p>Hello Ntshangase</p>
+                    <p>Account & Lists</p>
+                </div>
+                <div>
+                    <p>Returns</p>
+                    <p>Orders</p>
+                </div>
+                <div> 
+                    <ShoppingCartIcon className='h-10' />
+                    <p>Basket</p>
+                </div>
             </div>
         </div>
         {/* Bottom Nav */}
