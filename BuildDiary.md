@@ -15,4 +15,8 @@ this my winning sh'stick.
 -ChatGPT is officially my co-pilot, It has helped me with installing material-ui/core, for better functionality i 
 have to deepply explain my problem to ChatGPT that helped. But this AI is Software enginnering for reall, shout out to 
 everyone working on it.
--
+
+# -----------------------------------------------------------------------------------------------------------------#
+#07/01/23
+-now building Amazon 2.0, it's just better.
+-Had the hardest time with rendering an image, kept on load, but i debbuged using text , then I added all the commas right and that fixed the infinity loading.
