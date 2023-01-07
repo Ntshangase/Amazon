@@ -1,5 +1,6 @@
 import React from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
+import {SearchIcon} from '@heroicons/react/outline';
 
 export default function Header() {
   return (
@@ -17,6 +18,7 @@ export default function Header() {
             </div>
             <div>
                 <input type="text" />
+                <SearchIcon className='h-12 p-4' />
             </div>
         </div>
         {/* Bottom Nav */}
