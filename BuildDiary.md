@@ -20,3 +20,4 @@ everyone working on it.
 #07/01/23
 -now building Amazon 2.0, it's just better.
 -Had the hardest time with rendering an image, kept on load, but i debbuged using text , then I added all the commas right and that fixed the infinity loading.
+Installed heroIcons.
