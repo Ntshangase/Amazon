@@ -21,3 +21,4 @@ everyone working on it.
 -now building Amazon 2.0, it's just better.
 -Had the hardest time with rendering an image, kept on load, but i debbuged using text , then I added all the commas right and that fixed the infinity loading.
 Installed heroIcons.
+-I'm back coding again, been fixing errors for hours and i got to work, I had installed heroicons/v2 instead of version1 and my sudo is not working but it is installed and the password is alright, shout out to chatGPT for the major assist, chatGPT is in my software engineering this is the real deal.
