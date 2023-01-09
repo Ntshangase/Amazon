@@ -6,7 +6,7 @@ import Currency from 'react-currency-formatter';
 const MAX_RATING = 5;
 const MIN_RATING = 1;
 
-export default function Product({ id, tittle, price, description, category, image }) {
+export default function Product({ tittle, price, description, category, image }) {
     const [rating] = useState(
         Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1)) + MIN_RATING
     );
