@@ -26,3 +26,6 @@ Installed heroIcons.
 - Had to use --legacy-peer-deps, which in my current understanding helps decapritated/old/incompatable(at first sight) dependancies.
 -installed next.auth with --legacy-peer-deps
 - After a few failed attemps, I had to close and then re-open vscode to be able to install firebase with --legacy-peer-deps. fixing errors is one way to get better and Software engineering(X).
+-The error King.
+-With every error i solve i feel more like Popeye Spinach after he eats a can of Spinach.
+-ChatGPT is officialy my coding assistance, i always find progressive information there it's definetly way better that google. if My stackoverflow account was a person😴.
