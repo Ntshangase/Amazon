@@ -25,3 +25,4 @@ Installed heroIcons.
 -installed react-reactive-carosel used for making moving banner, easy to use (https://www.npmjs.com/package/react-responsive-carousel?activeTab=readme)
 - Had to use --legacy-peer-deps, which in my current understanding helps decapritated/old/incompatable(at first sight) dependancies.
 -installed next.auth with --legacy-peer-deps
+- After a few failed attemps, I had to close and then re-open vscode to be able to install firebase with --legacy-peer-deps. fixing errors is one way to get better and Software engineering(X).
