@@ -3,12 +3,12 @@ import Image from 'next/image';
 import { StarIcon } from '@heroicons/react/solid';
 import Currency from 'react-currency-formatter';
 import { useDispatch } from 'react-redux';
-import {addToBasket} from '../slices/basketSlice';
+import { addToBasket } from '../slices/basketSlice';
 
 const MAX_RATING = 5;
 const MIN_RATING = 1;
 
-export default function Product({ id, tittle, price, description, category, image }) { 
+export default function Product({ id, tittle, price, description, category, image }) {
     const dispatch = useDispatch();
     const [rating] = useState(
         Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1)) + MIN_RATING
@@ -23,7 +23,7 @@ export default function Product({ id, tittle, price, description, category, imag
             description,
             category,
             image,
-            hasPrime 
+            hasPrime
         };
 
         dispatch(addToBasket(product));
@@ -37,7 +37,7 @@ export default function Product({ id, tittle, price, description, category, imag
             <h4 className='my-3'>{tittle}</h4>
             <div className='flex'>
                 {Array(rating).fill().map((_, i) => (
-                    <StarIcon className='h-5 text-yellow-500' />
+                    <StarIcon className='h-5 text-yellow-500' ></StarIcon>
                 ))}
             </div>
             <p className='text-xs my-2 line-clamp-2'>{description}</p>
