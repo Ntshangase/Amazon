@@ -41,6 +41,15 @@ export default function checkout() {
                 </div>
 
                 {/**Right-side */}
+                <div> 
+                    {items.length > 0 && (
+                        <div>
+                            <h2>Subtotal ({items.length}):
+                            <span></span> </h2>
+                        </div>
+                    )
+                    }
+                </div>
 
             </main>
 
