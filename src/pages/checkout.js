@@ -28,30 +28,31 @@ export default function checkout() {
                         </h1>
 
                         {items.map((item, i) => (
-                            <CheckoutProduct 
-                            key={i}
-                            id={item.id}
-                            tittle={item.tittle}
-                            price={item.price}
-                            description={item.description}
-                            category={item.category}
-                            image={item.image}
-                            hasPrime={item.hasPrime}
-                             />
+                            <CheckoutProduct
+                                key={i}
+                                id={item.id}
+                                tittle={item.tittle} 
+                                price={item.price}
+                                rating={item.rating}
+                                description={item.description}
+                                category={item.category}
+                                image={item.image}
+                                hasPrime={item.hasPrime}
+                            />
                         ))}
                     </div>
                 </div>
 
                 {/**Right-side */}
-                <div> 
+                <div>
                     {items.length > 0 && (
                         <div>
                             <h2>Subtotal ({items.length}):
-                            <span className='font-bold'></span> 
+                                <span className='font-bold'></span>
                             </h2>
 
-                            <button>
-                                {!session ? "sign in to checkout"  : ' checkout' }
+                            <button className={`button mt-2 ${!session && 'from-gray-500 to-gray-500 border-gray-500 text-gray-300 cursor-not-allowed' } `}>
+                                {!session ? "sign in to checkout" : ' checkout'}
                             </button>
                         </div>
                     )

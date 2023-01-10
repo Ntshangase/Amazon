@@ -14,6 +14,7 @@ export default function CheckoutProduct({ id, tittle, price, rating, description
             id,
             tittle,
             price,
+            rating,
             description,
             category,
             image,
@@ -36,7 +37,7 @@ export default function CheckoutProduct({ id, tittle, price, rating, description
                 <p>{tittle}</p>
                 <div className='flex'>
                     {Array(rating).fill().map((_, i) => (
-                        <StarIcon className='h-5 text-yellow-500' />
+                        <StarIcon key={i} className='h-5 text-yellow-500' />
                     ))}
                 </div>
                 <p className='text-xs my-2 line-clamp-3'>{description}</p>

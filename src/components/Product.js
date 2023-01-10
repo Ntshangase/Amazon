@@ -20,10 +20,11 @@ export default function Product({ id, tittle, price, description, category, imag
             id,
             tittle,
             price,
+            rating,
             description,
             category,
             image,
-            hasPrime
+            hasPrime,
         };
 
         dispatch(addToBasket(product));

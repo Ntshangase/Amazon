@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import { selectItems } from '../slices/basketSlice';
 
 export default function Header() {
-    const { data: session, status } = useSession();
+    const { data: session} = useSession();
     const router = useRouter();
     const items = useSelector(selectItems)
 
