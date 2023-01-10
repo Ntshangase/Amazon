@@ -4,9 +4,11 @@ import Image from 'next/image';
 import { useSelector } from 'react-redux';
 import { selectItems } from '../slices/basketSlice';
 import CheckoutProduct from '../components/CheckoutProduct';
+import { useSession } from 'next-auth/react';
 
 export default function checkout() {
     const items = useSelector(selectItems);
+    const { data: session } = useSession()
 
     return (
         <div className='bg-gray-100'>
@@ -45,7 +47,12 @@ export default function checkout() {
                     {items.length > 0 && (
                         <div>
                             <h2>Subtotal ({items.length}):
-                            <span></span> </h2>
+                            <span className='font-bold'></span> 
+                            </h2>
+
+                            <button>
+                                {!session ? "sign in to checkout"  : ' checkout' }
+                            </button>
                         </div>
                     )
                     }
