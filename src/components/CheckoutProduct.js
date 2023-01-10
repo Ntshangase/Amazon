@@ -45,8 +45,8 @@ export default function CheckoutProduct({ id, tittle, price, rating, description
                     <Currency quantity={price} currency="ZAR" />
 
                 {hasPrime && (
-                    <div>
-                        <img loading='lazy' className='w-12' src='https://links.papareact.com/fwd' alt='' />
+                    <div className='flex items-center space-x-2'>
+                        <img loading='lazy' className='w-12' src='https://links.papareact.com/fdw' alt='' />
                         <p className='text-xs text-gray-500' >Free Next-day Delivery</p>
                     </div>
                 )}
