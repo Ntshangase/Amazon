@@ -1,8 +1,8 @@
 
-const stripe = require('stripe')(process.env.STRIPE_SECRETE_KEY);
+const stripe = require('stripe')('sk_test_51MP4GpAjlmOBni6jJ0A3l1wybC7IA4FNiamTSEvUt2ZGAL2vmKz8XSoBp4BV4CyCH1gAcroHRZwkBNfbMbHI8T4r00ymzHUE1J');
 
 export default async (req, res) => {
-    const{items, email} = req.body;
+    const {items, email} = req.body;
 
     const transformedItems = items.map(item => ({
         description: items.description,
@@ -11,13 +11,13 @@ export default async (req, res) => {
             currency: "zar",
             unit_amount: item.price * 100,
             product_data: {
-                name: item.tittle,
+                name: [item.title],
                 images: [item.image]
             },
         },
     }));
 
-    const session = await stripe.checkout.sesssion.create({
+    const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
         shipping_rates: ['shr_1MP5sIAjlmOBni6jTefQGVLE'],
         shipping_address_collection: {
