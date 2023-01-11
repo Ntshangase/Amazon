@@ -11,7 +11,7 @@ export default async (req, res) => {
             currency: "zar",
             unit_amount: item.price * 100,
             product_data: {
-                name: [item.title],
+                name: 'T-shirt',//instead oof item.name
                 images: [item.image]
             },
         },
@@ -19,7 +19,19 @@ export default async (req, res) => {
 
     const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
-        shipping_rates: ['shr_1MP5sIAjlmOBni6jTefQGVLE'],
+        shipping_options: [
+            {
+              shipping_rate_data: {
+                type: 'fixed_amount',
+                fixed_amount: {amount: 0, currency: 'zar'},
+                display_name: 'Free shipping',
+                delivery_estimate: {
+                  minimum: {unit: 'business_day', value: 5},
+                  maximum: {unit: 'business_day', value: 7},
+                },
+              },
+            },
+          ],
         shipping_address_collection: {
             allowed_countries: ["GB", "US", "ZA"],
         },
