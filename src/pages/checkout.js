@@ -49,7 +49,7 @@ export default function checkout() {
                 <div className='flex flex-col bg-white p-10 shadow-md'>
                     {items.length > 0 && (
                         <>
-                            <h2>Subtotal ({items.length}): {" "}
+                            <h2>Subtotal ({items.length} items): {" "}
                                 <span className='font-bold'>
                                     <Currency quantity={total} currency='ZAR' />
                                 </span>
