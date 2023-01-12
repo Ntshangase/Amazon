@@ -23,11 +23,11 @@ export default async (req, res) => {
             {
               shipping_rate_data: {
                 type: 'fixed_amount',
-                fixed_amount: {amount: 0, currency: 'zar'},
-                display_name: 'Free shipping',
+                fixed_amount: {amount: 400, currency: 'zar'},
+                display_name: 'Next-Day Shipping',
                 delivery_estimate: {
-                  minimum: {unit: 'business_day', value: 5},
-                  maximum: {unit: 'business_day', value: 7},
+                  minimum: {unit: 'business_day', value: 1},
+                  maximum: {unit: 'business_day', value: 2},
                 },
               },
             },
