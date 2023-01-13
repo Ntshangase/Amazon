@@ -31,4 +31,5 @@ Installed heroIcons.
 -ChatGPT is officialy my coding assistance, i always find progressive information there it's definetly way better that google. if My stackoverflow account was a person😴.
 # The date thing is dead.
 -Reading documentations is imperative. just went back to (https://next-auth.js.org/) had to see something and fixed it quick. #Ungang'phani
--A running shop, when i was about to give upit work.
+-A running shop, when i was about to give up it worked.
+-chatGPT can spot incosistances in my code, i'm getting better at using chat at programming. you have to be discriptive in your question, and the fact that uyakhumbula top tier.
