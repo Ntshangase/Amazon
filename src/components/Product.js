@@ -8,7 +8,7 @@ import { addToBasket } from '../slices/basketSlice';
 const MAX_RATING = 5;
 const MIN_RATING = 1;
 
-export default function Product({ id, tittle, price, description, category, image }) {
+export default function Product({ id, title, price, description, category, image }) {
     const dispatch = useDispatch();
     const [rating] = useState(
         Math.floor(Math.random() * (MAX_RATING - MIN_RATING + 1)) + MIN_RATING
@@ -18,7 +18,7 @@ export default function Product({ id, tittle, price, description, category, imag
     const addItemToBasket = () => {
         const product = {
             id,
-            tittle,
+            title,
             price,
             rating,
             description,
@@ -35,7 +35,7 @@ export default function Product({ id, tittle, price, description, category, imag
         <div className='relative flex flex-col m-5 bg-white z-30 p-10'>
             <p className='absolute top-2 right-2 text-xs italic text-gray-400'>{category} </p>
             <Image src={image} height={200} width={200} objectFit='contain' />
-            <h4 className='my-3'>{tittle}</h4>
+            <h4 className='my-3'>{title}</h4>
             <div className='flex'>
                 {Array(rating).fill().map((_, i) => (
                     <StarIcon className='h-5 text-yellow-500' ></StarIcon>

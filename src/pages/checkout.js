@@ -53,7 +53,7 @@ export default function checkout() {
                             <CheckoutProduct
                                 key={i}
                                 id={item.id}
-                                tittle={item.tittle}
+                                title={item.title}
                                 price={item.price}
                                 rating={item.rating}
                                 description={item.description}

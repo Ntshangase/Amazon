@@ -5,14 +5,14 @@ import { useDispatch } from 'react-redux';
 import { addToBasket, removeFromBasket } from '../slices/basketSlice';
 import Currency from 'react-currency-formatter';
 
-export default function CheckoutProduct({ id, tittle, price, rating, description, category, image, hasPrime }) {
+export default function CheckoutProduct({ id, title, price, rating, description, category, image, hasPrime }) {
 
     const dispatch = useDispatch();
 
     const addItemToBasket = () => {
         const product = {
             id,
-            tittle,
+            title,
             price,
             rating,
             description,
@@ -34,7 +34,7 @@ export default function CheckoutProduct({ id, tittle, price, rating, description
             <Image src={image} height={200} width={200} objectFit="contain" />
 
             <div className='col-span-3 mx-5'>
-                <p>{tittle}</p>
+                <p>{title}</p>
                 <div className='flex'>
                     {Array(rating).fill().map((_, i) => (
                         <StarIcon key={i} className='h-5 text-yellow-500' />

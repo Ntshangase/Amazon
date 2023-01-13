@@ -5,13 +5,14 @@ export default async (req, res) => {
     const {items, email} = req.body;
 
     const transformedItems = items.map(item => ({
-        description: items.description,
+        
         quantity: 1,
         price_data: {
             currency: "zar",
             unit_amount: item.price * 100,
             product_data: {
-                name: 'T-shirt',//instead oof item.name
+                name: item.title,
+                description: item.description,
                 images: [item.image]
             },
         },
@@ -23,7 +24,7 @@ export default async (req, res) => {
             {
               shipping_rate_data: {
                 type: 'fixed_amount',
-                fixed_amount: {amount: 400, currency: 'zar'},
+                fixed_amount: {amount: 4000, currency: 'zar'},
                 display_name: 'Next-Day Shipping',
                 delivery_estimate: {
                   minimum: {unit: 'business_day', value: 1},
