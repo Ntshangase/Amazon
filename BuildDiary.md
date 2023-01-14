@@ -33,3 +33,4 @@ Installed heroIcons.
 -Reading documentations is imperative. just went back to (https://next-auth.js.org/) had to see something and fixed it quick. #Ungang'phani
 -A running shop, when i was about to give up it worked.
 -chatGPT can spot incosistances in my code, i'm getting better at using chat at programming. you have to be discriptive in your question, and the fact that uyakhumbula top tier.
+For stripe cli (https://stripe.com/docs/stripe-cli) + chatGPT.
