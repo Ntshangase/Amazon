@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../components/Header';
 import moment from 'moment'
 import db from '../../firebase';
+import Order from '../components/Order';
 
 export default function Orders({ orders }) {
     const session = useSession();
@@ -16,14 +17,22 @@ export default function Orders({ orders }) {
                 </h1>
 
                 {session ? (
-                    <h2>x Orders</h2>
+                    <h2>{orders.length} Orders</h2>
                 ) : (
                     <h2>Please sign in to see your order(s)</h2>
                 )}
 
                 <div className='mt-5 space-y-4'>
-                    {orders?.map(order => (
-                        <order />
+                    {orders?.map(({id, amount, amountShipping, items, timestamp, images}) => (
+                        <Order 
+                           key={id}
+                           id={id}
+                           amount={amount}
+                           amountShipping={amountShipping}
+                           items={items}
+                           timestamp={timestamp}
+                           images={images}
+                        />
                     ))}
                 </div>
             </main>
