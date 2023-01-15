@@ -22,7 +22,6 @@ Run commands
 
 3) ```yarn run dev```
 
-
-### If you see the window below then you are set to build AMAZON 2.0!
-
-![Template Screenshot](TemplateScreenshot.jpg?raw=true "Template Screenshot")
+# listen 
+use the command: stripe listen --forward-to localhost:3000/api/webhook
+-make sure the key you get after running above code is the same as the one in the .env.local file.
