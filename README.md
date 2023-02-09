@@ -25,6 +25,7 @@ Run commands
 # listen 
 use the command: stripe listen --forward-to localhost:3000/api/webhook
 -make sure the key you get after running above code is the same as the one in the .env.local file.
+-For stripe payment please us '424242....ect' for the card numbers and you can randomly fill in the rest of the information
 .You should see two yellow '' warn - ....'' messaged after running npm run dev if not please open and save the tailwind.config.js file
 
 
