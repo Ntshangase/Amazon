@@ -35,9 +35,9 @@ Installed heroIcons.
 -chatGPT can spot incosistances in my code, i'm getting better at using chat at programming. you have to be discriptive in your question, and the fact that uyakhumbula top tier.
 For stripe cli (https://stripe.com/docs/stripe-cli) + chatGPT.
 
-.I have solved one of my most pressing issues, I was having problems with my firebase complaining about rules for it to letter stoping allowing firestore to function, I figured maybe it's a paid tier or it will be too comple tosolve on my own...little did i kno.
+.I have solved one of my most pressing issues, I was having problems with my firebase complaining about rules for it to letter stoping allowing firestore to function, I figured maybe it's a paid tier or it will be too comple tosolve on my own...little did i know.
 -The past couple of days i have been having those maybe i'm just not a good developer thoughts(lol) and i also hadn't build anything in a few days, so i was a bit of, But like i always do i decided to work no matter what today put in the hours vibes.
-- I did my stuff and got he email warning that m Amazon clone firestore security rules need updating, let it go at first then later on  decided to just give this thing a try and see where i can end up if i tried solving it, how hard can it be mindset.
+- I did my stuff and got the email warning that my Amazon clone firestore security rules need updating, let it go at first then later on  decided to just give this thing a try and see where i can end up if i tried solving it, how hard can it be mindset.
 -A few clicks in I bumped into google developer vibes and registered there, then proceeded to do the thing's to make the pot's happen. I got my firebase badge and the confidence boost to now face my challenge which i did and it was as simple as copy and paste.
 -thank you to me.
 -now me and firebase have a healthy relationship and i can continue doing firebase projects without fear or favour. 
